@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Window</title>
+    <link rel = "stylesheet" type="text/css" href="rfstyle.css">
+</head>
+<body>
+
+
+
+    <div id="popup-window">
+        <h1>Application Form</h1>
+        <button id="close-button">Close</button>
+      </div>
+
+    <form action="https://formsubmit.co/201812905@fit.edu.ph" method="POST">
+        <h2>Application Form</h2>
+
+        <div class="inputBox">
+            <input type="text" name ="username" required>
+            <label>Name</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="text" name= "number" required>
+            <label>Mobile Number</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" name= "email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="inputBox">
+            <div class="custom-select" style="width:200px;">
+            <label>Applying For:</label><br><br>
+            <select>
+			<option disabled selected value> -- select an option -- </option>
+			<option value="1stat">Animation Programmer</option>
+			<option value="2stat">Animator</option>
+			<option value="3stat">ARTISTE TECHNIQUE SENIOR / SENIOR TECHNICAL ARTIST</option>
+			<option value="4stat">Engine Programmer</option>
+            <option value="4stat">Game Development Automation & Stability Engineer</option>
+			</select>
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="custom-select" style="width:200px;">
+            <label>Job Location:</label><br><br>
+            <select>
+			<option disabled selected value> -- select an option -- </option>
+			<option value="1stat">Antipolo, Rizal</option>
+			<option value="2stat">Mandaluyong, Metro Manila</option>
+			<option value="3stat">BGC, Taguig</option>
+			<option value="4stat">Quezon City, Metro Manila</option>
+			</select>
+            </div>
+        </div>
+
+        <div class="inputBox">
+        <p>Upload Resume</p>
+        <input type="file" id="myFile" name="filename">
+        </div>
+
+        <div class="inputBox">
+        <p>Upload Cover Letter</p>
+        <input type="file" id="myFile" name="filename">
+        </div>
+
+        <div class="inputBox">
+            <input type="submit" value="Create">
+        </div>
+
+    </form>
+
+    <script>
+        let label = document.querySelectorAll('label')
+        .forEach(label => {label.innerHTML = label.innerText.split('').map
+        ((letters, i) => `<span style="transition-delay: ${i *  50}ms"> ${letters} </span>`).join('');
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,598 @@
+*{
+    margin:0px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+
+aside {
+    width: 250px;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75)
+  }
+  
+a, a:link, a:visited {
+      color: #FFFAFA;
+      text-decoration: none;
+    }
+  
+aside a:hover{
+    color: #585858;
+    padding: 8px 20px;
+}
+
+  aside ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 20px 0;
+  }
+  
+  aside ul li .fas {
+    width: 50px;
+  }
+  
+  .aside-wrapper {
+    padding: 0 40px;
+    box-sizing: border-box;
+  
+  }
+  
+  .logo-text {
+    font-size: 32px;
+    position: relative;
+  }
+  
+  .sidebar-toggle {
+    position: absolute;
+    top: 5px;
+    left: 205px;
+    background: rgb(0, 0, 0);
+    padding: 4px 11px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  input:checked ~ aside {
+    left: -250px;
+  }
+
+#headerbanner-div{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10px;
+}
+
+#logo-div{
+    width: 20%;
+    min-height: 65px;
+    background-color: #f5f5f5;
+    line-height: 19px;
+    padding-top: 12px;
+    padding-left: 10%;
+    float: left;
+    margin-bottom: 10px;
+    border-top-left-radius: 15px; border-bottom-left-radius: 15px;
+}
+
+
+#nav-div{
+    width: 80%;
+    min-height:69px;
+    background-color: #f5f5f5;
+    padding-left: 15rem;
+    float: right;
+    line-height:50px; 
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px;
+
+}
+
+#nav-div a {
+    box-shadow: none;
+    outline: none;
+    background-color: #000000;
+    line-height: 25px;
+    color:#ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#nav-div a:hover{
+    background-color: #585858;
+    padding: 8px 20px;
+    
+}
+
+
+#main-div{
+    width: 100%;
+}
+
+
+#main-div .news{
+    width: 100%;
+    background: url(Banner_News.png) no-repeat;
+    min-height: 416px;
+    margin-left: 15px;
+}
+
+#main-div .games-header{
+    width: 100%;
+    background: url(shopheader.png) no-repeat;
+    min-height: 416px;
+    margin-left: 15px;
+    
+}
+
+#main-div .career{
+    width: 100%;
+    background: url(careerHeader.png) no-repeat;
+    min-height: 416px;
+    margin-left: 15px;
+    
+}
+
+#main-div .news h1{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 880px;
+    margin-top: 50px;
+}
+
+#main-div .games-header h1{
+    color: #000000;
+    text-align: Center;
+    margin-left: 650px;
+    margin-top: 50px;
+}
+
+#main-div .news a{
+    color: #ffffff;
+    text-align: left;
+    margin-left:550px;
+    margin-top: 50px;
+    font-size: 20px;
+    box-shadow: none;
+    outline: none;
+    background-color: #f5f5f5;
+    line-height: 25px;
+    color:#000;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    
+}
+
+
+
+#main-div .box{
+    width: 40%;
+    min-height: 400px;
+    background-color: #f5f5f5;
+    float: left;
+    margin-left: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+#bodyarea-div .about-box{
+    width: 100%;
+    min-height: 400px;
+    background-color: lightgray;
+    float: left;
+    border-radius: 16px;
+}
+
+.outside-box{
+    width: 69%;
+    margin-left: 10px;
+    min-height: 588px;
+    border-radius: 16px;
+    padding: 12px;
+    background-color: lightgray;
+    float: left;
+}
+
+
+#main-div .box:nth-child(2){
+    width: 98%;
+    background: url(valorant.jfif) no-repeat center;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main-div .box:nth-child(3){
+    width: 32%;
+    background: url(Fallout76.jpg) no-repeat center top;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main-div .box:nth-child(4){
+    width: 32%;
+    background: url(Apex.jpg)no-repeat center; 
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main-div .box:nth-child(5){
+    width: 32%;
+    background: url(SOS.jpg) center top;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+#main-div .box:nth-child(6){
+    width: 98%;
+    background: url(Astroneer.jpg)center;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+#main-div .box:nth-child(n+1):nth-child(-n+6) a{
+    box-shadow: none;
+    outline: none;
+    background-color: #f5f5f5;
+    line-height: 25px;
+    color:#000;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+#main-div .games-page{
+    width: 40%;
+    min-height: 400px;
+    background-color: #f5f5f5;
+    float: left;
+    margin-left: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+#main-div .games-page:nth-child(2){
+    width: 32%;
+    background: url(valorant.jfif) no-repeat center;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main-div .games-page:nth-child(3){
+    width: 32%;
+    background: url(Fallout76.jpg) no-repeat center top;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main-div .games-page:nth-child(4){
+    width: 32%;
+    background: url(Apex.jpg)no-repeat center; 
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main-div .games-page:nth-child(5){
+    width: 32%;
+    background: url(SOS.jpg) center top;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+#main-div .games-page:nth-child(6){
+    width: 32%;
+    background: url(Astroneer.jpg)center;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#main-div .games-page:nth-child(7){
+    width: 32%;
+    background: url(fnv.jfif)center;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+#main-div .games-page:nth-child(n+1):nth-child(-n+7) a{
+    box-shadow: none;
+    outline: none;
+    background-color: #f5f5f5;
+    line-height: 25px;
+    color:#000;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#main-div .games-page:nth-child(n+1):nth-child(-n+7) a:hover{
+    background-color: #000000;
+    color: #f5f5f5;
+    font-size: 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+
+#main-div .games-page:nth-child(n+1):nth-child(-n+7)  h6{
+font-size: 20px;
+
+}
+
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+#bodyarea-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    border-radius: 16px;
+    
+}
+
+#bodyarea-div h1{
+    font-size: 40px;
+    
+}
+
+#bodyarea-div .news a:hover{
+    background-color: #6b6b6b;
+    color: #f5f5f5;
+    transition: 0.3s background-color;
+}
+
+
+#about-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 20px;
+    float: left;
+    border-radius: 15px;
+    font-size: 13px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+#about-div .p1{
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+#about-div .p1:nth-child(2),
+#about-div .p1:nth-child(3){
+    width: 21.5%;
+    margin-right: 6rem;
+}
+
+#about-div .p1:nth-child(4),
+#about-div .p1:nth-child(5){
+    width: 15%;
+}    
+
+
+#main-div .about-page{
+    width: 30%;
+    min-height: 400px;
+    background-color: lightgray;
+    float: left;
+}
+
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+#wrapper-div{
+    width: 80%;
+    margin:auto;
+    background-color: #f5f5f500;
+    border-radius: 16px;
+}
+
+button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 16px;
+  }
+
+table {
+    width: 94.5rem;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+tr:nth-child(even) {
+    background-color: #0000004b;
+}
+
+tr:nth-child(odd) {
+    background-color: #444444af;
+}
+
+th {
+    background-color: #000000de;
+    color: white;
+    height: 5rem;
+}
+
+td{
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+}
+
+td:nth-child(1){
+    color: #ffffff;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #303030;
+  }
+
+.bg-section{
+    background: url(background.png) no-repeat center;
+    background-color: #000;
+    background-size: cover;
+    width: 100%;
+}
+
+#footer-div{
+    width: 100%;
+    min-height: 20px;
+    background-color: #000000;
+    float: left;
+    border-radius: 16px;
+}
+
+#footer-div h6, h4{
+    color: #FFFAFA;
+    
+}
+
+#footer-div h4{
+    text-decoration:underline;
+	text-decoration-style: solid;
+	text-decoration-color: #ffffff;
+	text-decoration-thickness: 3px;
+}
+
+#footer-div .foot-id{
+    width: 100%;
+    margin-top: 10px;
+    margin-right:125px;
+    text-align: left;
+}
+
+#footer-div .logo{
+    width: 50%;
+    height: 50%;
+    padding-top: 30px;
+
+}
+
+#footer-div .img-div{
+    width: 15%;
+    padding-left: 48px;
+}
+
+#footer-div .foot-id:nth-child(1),
+#footer-div .foot-id:nth-child(2),
+#footer-div .foot-id:nth-child(3),
+#footer-div .foot-id:nth-child(4){
+    width: 19%;
+
+}
+
+
+#footer-div a{
+    font-size: 10px;
+}
+
+#footer-div a:hover{
+    color: #585858;
+    
+}
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    <link rel = "stylesheet" type="text/css" href="complain.css">
+</head>
+<body>
+
+    <div id="popup-window">
+        <h1>Pop-up Window</h1>
+        <p>This is a pop-up window.</p>
+        <button id="close-button">Close</button>
+      </div>
+
+    <form action="https://formsubmit.co/201812905@fit.edu.ph" method="POST">
+        <h2>Report Window</h2>
+        <div class="inputBox-complaint">
+            <input type="text" name ="username" required>
+            <label>Username</label>
+        </div>
+        <div class="inputBox-complaint">
+            <input type="email" name= "email" required>
+            <label>Email</label>
+        </div>
+        <div class="inputBox-complaint">
+            <label>Issue: </label><br><br>
+            <textarea></textarea>
+            
+        </div>
+
+        <div class="inputBox-complaint">
+            <label>Proof: </label>
+            <input type="file"name="filename">
+            </div>
+
+            <div class="inputBox-complaint">
+                <input type="submit" value="Create">
+            </div>
+
+    <script>
+        let label = document.querySelectorAll('label')
+        .forEach(label => {label.innerHTML = label.innerText.split('').map
+        ((letters, i) => `<span style="transition-delay: ${i *  50}ms"> ${letters} </span>`).join('');
+        });
+    </script>
+    
+</body>
+</html>
